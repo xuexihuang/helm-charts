@@ -17,7 +17,7 @@ OpenIM Helm Charts simplify deployment and management of OpenIM instant messagin
 > **Note**: the next release ,we will adapt the chart's ingress configuration for traefik and istio ingress-controller.
 
 ## Directory Structure
-
++ **dock/**: user-guide dock,how to use grafana and loki
 + **openim/**: Helm Charts for "adminforont","openim-chat","openim-server","webfront"
 + **infra**: Contains Helm Charts/configurations for middleware OpenIM relies on(e.g. kafka,minio,mongodb,mysql,redis;prometheus and loki are also included).
 + **config-imserver.yaml**: openim-server's config file,Used to generate configmap for openim-server.
