@@ -31,17 +31,20 @@ Detailed directory info can be found in the respective directories.
 
 ## Quick Start
 
-### [Optional]Install prometheus**
+### [Optional]Install prometheus
 
 If you need to enable monitoring, install the kube-prometheus-stack component:
 
+1. To enable monitoring you need a domain name to access grafana web pages. Please change prometheus-config.yaml to your real domain name and tls name.
+2. Use 'kubectl create secret tls yourtlsname --cert=domain.crt --key=domain.key -n openim' to create your tls name about your domain name.
 ```bash
 helm install kube-prometheus-stack infra/kube-prometheus-stack/ -f infra/prometheus-config.yaml -n openim
 ```
 
 > **Note**
-> To enable monitoring you need a domain name to access grafana web pages. Please change prometheus-config.yaml to your real domain name and tls name.
-
+> If your want prometheus alert function,you should change alertmanager.config section to your truly email information.
+>
+> 
 ### [Optional]Install loki
 
 If you need to enable loki, install the loki-stack component:
