@@ -137,5 +137,4 @@ helm install imadminfront -f k8s-adminfront-config.yaml ./openim/adminfront/ -n 
 
 
 ## How to use grafana
-
-https://github.com/openimsdk/open-im-server/blob/main/docs/contrib/prometheus-grafana.md
+[doc/user-guider.md](doc/user-guide.md)
