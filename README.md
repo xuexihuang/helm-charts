@@ -86,7 +86,7 @@ helm install im-redis infra/redis -f infra/redis-config.yaml -n openim
 helm install im-minio infra/minio -f infra/minio-config.yaml -n openim
 ```
 
-## Install OpenIM Server Service
+## Install OpenIM Server
 
 1. change domain, tls name to your real configuration in k8s-open-im-server-config.yaml.
 2. change domain name to your real name in config-imserver.yaml in object configuration:
@@ -117,7 +117,7 @@ helm install im-minio infra/minio -f infra/minio-config.yaml -n openim
 helm install openimserver -f k8s-open-im-server-config.yaml -f config-imserver.yaml -f notification.yaml  ./openim/openim-server/ -n openim
 ```
 
-## Install OpenIM Chat Service
+## Install OpenIM Chat
 1. change domain, tls name to your real configuration in k8s-chat-server-config.yaml.
 2. install openimchat
 ```bash
