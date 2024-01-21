@@ -29,6 +29,7 @@ config:
     openImAdminName: openimchat-admin-rpc:80
     openImChatName: openimchat-chat-rpc:80
     openImOfficeName: openimchat-office-rpc:80
+    openImRtcName: openimchat-rtc:80
 
   # 没有配置表示和OpenIM一致
   mysql:
